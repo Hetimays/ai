@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+#chatBox {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 80%;
+    height: 600px;
+    overflow-y: scroll;
+    background: #fff;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#userInput {
+    width: 70%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    resize: none;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* メッセージスタイル */
+.message {
+    padding: 8px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.user-message {
+    background-color: #d1e7fd;
+    align-self: flex-end;
+    max-width: 75%;
+}
+
+.bot-message {
+    background-color: #f1f1f1;
+    align-self: flex-start;
+    max-width: 75%;
+}
+
+.error-message {
+    background-color: #f8d7da;
+    align-self: center;
+    max-width: 75%;
+}
+
+/* メッセージ内の改行処理 */
+.message br {
+    display: block;
+    margin-bottom: 5px;
+}
+
+code {
+    font-family: monospace;
+    background-color: #f0f0f0;
+    padding: 2px 4px;
+    border-radius: 3px;
+    color: #333;
+}
+
+pre code {
+    display: block;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}

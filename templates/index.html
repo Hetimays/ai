@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatGPT Web App</title>
+    <!-- 外部CSSファイルを読み込み -->
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <h1>ChatGPT Web App</h1>
+    <div id="chatBox"></div>
+    <!-- 改行が可能なテキストエリアに変更 -->
+    <textarea id="userInput" placeholder="Type your message here..." rows="4" cols="50"></textarea>
+    <button id="sendButton">Send</button>
+    <!-- 外部JavaScriptファイルを読み込み -->
+    <script src="/static/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-python.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-javascript.min.js"></script>
+</body>
+</html>
